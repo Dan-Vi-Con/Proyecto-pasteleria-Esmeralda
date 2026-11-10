@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Teórico - Pastelería Esmeralda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <aside class="sidebar">
@@ -86,63 +88,219 @@
 
         <section id="tabla-contenido" class="content-section">
             <h2>Tabla de Contenido</h2>
-            <div class="vintage-divider"></div>
-            <p>...</p>
+            <div class="vintage-divider">
+            </div>
+            <div>
+                <dl>
+                    <dt>
+                        <b>I. GENERALIDADES Y MARCO TEÓRICO</b>
+                    </dt>
+                    <dd>
+                        1. Introducción</dd>
+                    <dd>
+                        2. Antecedentes</dd>
+                    <dd>
+                        3. Planteamiento del Problema</dd>
+                    <dd>
+                        4. Árbol de Problemas</dd>
+                    <dd>
+                        5. Formulación del Problema</dd>
+                    <dd>
+                        6. Propósito del Estudio</dd>
+                    <dd>
+                        7. Método, medios e instrumentos de investigación</dd>
+                    <dd>
+                        8. Planificación de actividades</dd>
+                    <dt>
+                        <b>II. ANÁLISIS Y DISEÑO ESTRUCTURADO</b>
+                    </dt>
+                    <dt>
+                        <b>III. ANÁLISIS Y DISEÑO ORIENTADO A OBJETOS</b>
+                    </dt>
+                </dl>
+            </div>
         </section>
 
         <section id="introduccion" class="content-section">
-            <h2>Introducción</h2>
+            <h2>1. Introducción</h2>
             <div class="vintage-divider"></div>
-            <p>...</p>
+            <p>La industria de la pastelería y repostería se caracteriza por el manejo diario de una amplia variedad de
+                materias primas con distintos grados de perecibilidad, costos variables y condiciones estrictas de
+                almacenamiento.
+                Insumos esenciales como lácteos, huevos, mantequillas, coberturas de chocolate, frutas frescas, harinas
+                especiales y aditivos requieren un seguimiento riguroso desde su recepción en almacén hasta su
+                transformación en el área de producción.<br><br>
+                En la mayoría de las pastelerías pequeñas y medianas, el control de existencias se realiza de forma
+                empírica o mediante registros manuales desconectados del flujo real de producción. Esta brecha operativa
+                genera pérdidas económicas por caducidad de ingredientes, compras de emergencia a sobrecosto y retrasos
+                en la elaboración de pedidos por faltantes no detectados a tiempo. El presente informe estructura el
+                análisis y diseño de un sistema automatizado de gestión de insumos orientado a estandarizar el control
+                de lotes,
+                optimizar la rotación de stock y vincular el consumo de materia prima con las recetas estándar de
+                producción.
+            </p>
         </section>
 
         <section id="antecedentes" class="content-section">
-            <h2>Antecedentes</h2>
+            <h2>2. Antecedentes</h2>
             <div class="vintage-divider"></div>
-            <p>...</p>
+            <p>Históricamente, los negocios de pastelería artesanal han administrado sus almacenes mediante cuadernos de
+                bitácora, kardex físicos o planillas básicas de cálculo. Si bien estos registros cumplen una función
+                elemental en
+                emprendimientos con bajo volumen de ventas, pierden efectividad cuando el catálogo de productos se
+                diversifica y la rotación de insumos se acelera en temporadas de alta demanda.<br><br>
+                Diversos estudios aplicados a pequeñas y medianas empresas del sector gastronómico demuestran que las
+                mermas no controladas de materia prima representan entre el 8% y el 15% del costo total de operación. En
+                respuesta a esta problemática, la evolución de los sistemas de información ha permitido trasladar
+                metodologías logísticas industriales como la rotación por fecha de vencimiento y el descuento automático
+                por receta estándar hacia plataformas accesibles para pastelerías, mejorando la
+                trazabilidad de cada lote de producción.
+            </p>
         </section>
 
         <section id="planteamiento" class="content-section">
-            <h2>Planteamiento del Problema</h2>
+            <h2>3. Planteamiento del Problema</h2>
             <div class="vintage-divider"></div>
-            <p>...</p>
+            <p>En la operación cotidiana de la pastelería, el área de almacén e insumos enfrenta dificultades críticas
+                derivadas de la ausencia de un sistema centralizado de control de inventarios. Las entradas de
+                mercadería entregadas por los proveedores y las salidas diarias hacia el obrador de pastelería no se
+                registran en tiempo real, provocando una distorsión constante entre el stock físico real y el stock
+                teórico.<br><br>
+                Esta situación desencadena cuatro problemáticas operativas concretas:<br>
+                • <strong>Pérdidas por vencimiento y deterioro:</strong> Los insumos altamente perecederos (crema de
+                leche, frutas,
+                claras, rellenos) se almacenan sin un control automatizado de fechas de caducidad, ocasionando
+                desperdicios frecuentes.<br>
+                • <strong>Quiebres de stock en producción:</strong> La falta de alertas de stock mínimo impide prever el
+                agotamiento de
+                ingredientes críticos antes de iniciar la jornada de horneado y decoración.<br>
+                • <strong>Descontrol en el rendimiento de recetas:</strong> La salida de insumos hacia producción se
+                realiza a granel sin
+                contrastar las cantidades entregadas frente a la receta estándar de cada pastel o postre.<br>
+                • <strong>Sobrecostos en adquisiciones:</strong> Ante la falta de planificación de compras, el negocio
+                recurre a compras
+                urgentes al por menor, reduciendo el margen de utilidad por unidad vendida.
+            </p>
         </section>
 
         <section id="arbol" class="content-section">
-            <h2>Árbol de Problemas</h2>
+            <h2>4. Árbol de Problemas</h2>
             <div class="vintage-divider"></div>
-            <p>...</p>
+            <img src="./arbolProblemas.png">
         </section>
 
         <section id="formulacion" class="content-section">
-            <h2>Formulación del Problema</h2>
+            <h2>5. Formulación del Problema</h2>
             <div class="vintage-divider"></div>
-            <p>...</p>
+            <p><strong>Pregunta General:</strong><br>
+                ¿De qué manera el análisis y diseño de un sistema automatizado de gestión de
+                insumos permitirá optimizar el control de inventarios, reducir las mermas por caducidad y garantizar el
+                abastecimiento oportuno en el área de producción de la pastelería?<br><br>
+                <strong>Preguntas Específicas:</strong><br>
+                • ¿Cómo estructurar el registro y clasificación de materias primas perecederas y no perecederas para
+                asegurar su rotación bajo el criterio primero en expirar, primero en salir?<br>
+                • ¿De qué forma la integración de recetas estándar en el sistema permitirá controlar el
+                consumo exacto
+                de insumos por orden de producción?<br>
+                • ¿Qué indicadores y alertas automatizadas se requieren para prevenir quiebres de stock y optimizar el
+                cronograma de compras a proveedores?
+            </p>
         </section>
 
         <section id="proposito" class="content-section">
-            <h2>Propósito del Estudio (Objetivos Generales y Específicos)</h2>
+            <h2>6. Propósito del Estudio (Objetivos Generales y Específicos)</h2>
             <div class="vintage-divider"></div>
-            <p><strong>Objetivo General:</strong> ... </p>
-            <p><strong>Objetivos Específicos:</strong> ...</p>
+            <p><strong>Objetivo General:</strong><br>
+                Analizar y diseñar un sistema de gestión y control de insumos para
+                la pastelería que modele el registro automatizado de entradas y salidas, el monitoreo de fechas de
+                vencimiento y
+                el descuento por receta estándar, con el propósito de disminuir las mermas operativas y asegurar la
+                disponibilidad continua de materia prima.</p>
+            <br>
+            <p><strong>Objetivos Específicos:</strong><br>
+                • Realizar el relevamiento y diagnóstico de los flujos actuales de recepción,
+                almacenamiento, conservación y despacho de insumos en la pastelería.<br>
+                • Categorizar y codificar el catálogo de insumos según su naturaleza (secos, refrigerados, congelados y
+                empaques), unidades de conversión y vida útil.<br>
+                • Diseñar el módulo de control de existencias por lotes y fechas de caducidad bajo el método FEFO,
+                incorporando alertas tempranas de vencimiento y stock mínimo.<br>
+                • Modelar el módulo de formulación de recetas estándar que descuente automáticamente
+                los ingredientes utilizados según las órdenes de producción diarias.<br>
+                • Definir la estructura de reportes gerenciales sobre valorización de inventario, historial de mermas,
+                rendimiento de
+                materia prima y sugerencias de reabastecimiento.
+            </p>
         </section>
 
         <section id="metodo" class="content-section">
-            <h2>Método, Medios e Instrumentos de Investigación</h2>
+            <h2>7. Método, Medios e Instrumentos de Investigación</h2>
             <div class="vintage-divider"></div>
-            <p>...</p>
+            <p><strong>Marco Teórico Referencial:</strong><br>
+                • <strong>Gestión de Inventarios en Pastelería:</strong> Consiste en la administración planificada de
+                materias primas, insumos intermedios (premezclas, rellenos, almíbares base) y material de empaque. A
+                diferencia del comercio minorista tradicional, el inventario pastelero sufre transformaciones físicas y
+                químicas que exigen controlar tanto el peso bruto comprado como el peso neto utilizable (merma de
+                limpieza o cocción).<br>
+                • <strong>Método FEFO (<i>First Expired, First Out</i>):</strong> Metodología logística en la cual los
+                lotes de insumos con fecha de caducidad más próxima son los primeros en despacharse al área de
+                producción, independientemente de su fecha de ingreso al almacén. Su aplicación es indispensable en
+                lácteos, ovoproductos, levaduras frescas y frutas.<br>
+                • <strong>Método PEPS (<i>Primero en Entrar, Primero en Salir</i> / FIFO):</strong> Criterio aplicado a
+                insumos no perecederos de larga duración (cajas, bases de cartón, cintas, utensilios descartables) y a
+                la valuación contable del inventario, asegurando la rotación continua del capital de trabajo.<br>
+                • <strong>Receta Estándar de Producción:</strong> Fórmula técnica cuantificada que detalla
+                la lista exacta de ingredientes, las cantidades netas, el porcentaje de merma permitida y el costo
+                unitario requerido para elaborar un lote específico de producto pastelero. Permite que el sistema
+                descuente automáticamente del inventario la proporción exacta de insumos por cada pastel producido.<br>
+                • <strong>Punto de Reorden y Stock de Seguridad:</strong> El stock de seguridad constituye el colchón
+                mínimo de existencias para enfrentar variaciones imprevistas en la demanda de pasteles o demoras del
+                proveedor. El punto de reorden es el umbral numérico de inventario que dispara automáticamente una
+                alerta de compra considerando el tiempo de entrega del proveedor (<i>Lead Time</i>).<br>
+                • <strong>Fundamentos para el Análisis y Diseño Estructurado (Capítulo II):</strong> El enfoque
+                estructurado modela el sistema basado en los procesos y el flujo de la información mediante Diagramas de
+                Flujo de Datos (DFD). Para garantizar la integridad del modelo arquitectónico, es una regla estricta de
+                diseño que exista un balanceo perfecto; es decir, <strong>la cantidad de entradas y salidas de datos
+                    debe ser exactamente igual en cada nivel del diagrama</strong> (desde el DFD de Contexto, Nivel 0,
+                Nivel 1, etc.), asegurando que ninguna información se pierda o se genere de la nada.<br>
+                • <strong>Fundamentos para el Análisis y Diseño Orientado a Objetos (Capítulo III):</strong> Este
+                enfoque modela el sistema mediante la identificación de objetos, sus atributos y comportamientos,
+                utilizando el Lenguaje Unificado de Modelado (UML). Se desarrollan diagramas de Casos de Uso, diagramas
+                de Clases y diagramas de Secuencia. Para el modelado de los datos a nivel de clases lógicas, se proyecta
+                <strong>una estructura de base de datos tradicional y normalizada, utilizando nombres de
+                    tablas/entidades sencillos e intuitivos</strong> (como Insumo, Lote, Receta), descartando esquemas
+                complejos como el modelado en estrella al tratarse de un sistema transaccional puro.
+            </p>
         </section>
 
         <section id="planificacion" class="content-section">
-            <h2>Planificación de Actividades</h2>
+            <h2>8. Planificación de Actividades</h2>
             <div class="vintage-divider"></div>
-            <p>...</p>
-        </section>
-
+            <p>La ejecución del análisis y diseño se estructura en cinco fases semanales durante el periodo comprendido
+                del <strong>1 de noviembre al 6 de diciembre de 2026</strong>.<br><br>
+                <strong>A. Estructura por Fases y Tareas:</strong><br>
+                • <strong>Fase 1: Relevamiento y Diagnóstico (01/11 - 07/11):</strong> Tarea A: Identificación de
+                procesos actuales en almacén y producción. Tarea B: Definición de requerimientos funcionales y no
+                funcionales.<br>
+                • <strong>Fase 2: Modelado del Negocio (08/11 - 14/11):</strong> Tarea C: Identificación de actores del
+                sistema y casos de uso del negocio. Tarea D: Elaboración del glosario de términos (insumos, recetas,
+                mermas).<br>
+                • <strong>Fase 3: Análisis y Diseño Estructurado (15/11 - 21/11):</strong> Tarea E: Elaboración del DFD
+                de Contexto y DFD Nivel 0. Tarea F: Expansión a niveles inferiores aplicando balanceo estricto de
+                entradas y salidas.<br>
+                • <strong>Fase 4: Análisis y Diseño Orientado a Objetos (22/11 - 28/11):</strong> Tarea G: Elaboración
+                de Diagramas de Casos de Uso del sistema. Tarea H: Diseño del Diagrama de Clases lógico (modelo
+                relacional tradicional). Tarea I: Elaboración de Diagramas de Secuencia para procesos críticos.<br>
+                • <strong>Fase 5: Consolidación del Documento (29/11 - 06/12):</strong> Tarea J: Integración de los
+                Capítulos I, II y III, revisión de consistencia y entrega del informe final.
+            </p>
+            <br>
+            <p><strong>B. Diagrama de Gantt (Cronograma del 1 de noviembre al 6 de diciembre de 2026):</strong></p>
+            <br>
+            <img src="./gantt.png">
         <footer class="content-footer-section">
             <p>Pastelería Esmeralda — I.- Generalidades y Marco Teórico © 2026</p>
         </footer>
     </main>
-
 </body>
+
 </html>

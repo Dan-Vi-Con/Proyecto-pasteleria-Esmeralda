@@ -1,255 +1,256 @@
 :root {
-    --color-fondo-amarillo: #F4E4A3; 
-    --color-panel-claro: #FFF8E1;    
-    --color-dorado-formal: #C5A059;
-    --color-dorado-suave: #E6C575;
-    --color-cafe-oscuro: #362214;
-    --color-cafe-muy-oscuro: #21130A;
-    --color-cafe-sub: #2C1B10;
-    --color-texto-formal: #2B1D12;
-    --borde-formal: #D1B888;
+  --color-fondo-amarillo: #f4e4a3;
+  --color-panel-claro: #fff8e1;
+  --color-dorado-formal: #c5a059;
+  --color-dorado-suave: #e6c575;
+  --color-cafe-oscuro: #362214;
+  --color-cafe-muy-oscuro: #21130a;
+  --color-cafe-sub: #2c1b10;
+  --color-texto-formal: #2b1d12;
+  --borde-formal: #d1b888;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Times New Roman', Times, Georgia, serif;
-    background-color: var(--color-fondo-amarillo);
-    color: var(--color-texto-formal);
-    display: flex;
-    min-height: 100vh;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  background-color: var(--color-fondo-amarillo);
+  color: var(--color-texto-formal);
+  display: flex;
+  min-height: 100vh;
 }
 
 .sidebar {
-    width: 290px;
-    background-color: var(--color-cafe-oscuro);
-    color: #FDFBF7;
-    position: fixed;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    border-right: 2px solid var(--color-dorado-formal);
-    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+  width: 290px;
+  background-color: var(--color-cafe-oscuro);
+  color: #fdfbf7;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid var(--color-dorado-formal);
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .sidebar-header {
-    padding: 25px 20px;
-    background-color: var(--color-cafe-muy-oscuro);
-    border-bottom: 2px solid var(--color-dorado-formal);
-    text-align: center;
-    flex-shrink: 0;
+  padding: 25px 20px;
+  background-color: var(--color-cafe-muy-oscuro);
+  border-bottom: 2px solid var(--color-dorado-formal);
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .sidebar-header h2 {
-    font-size: 1.2rem;
-    color: #E8D39C;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #e8d39c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .sidebar-nav {
-    padding: 15px 0;
-    flex-grow: 1;
-    overflow-y: auto;
+  padding: 15px 0;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .sidebar-nav::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 .sidebar-nav::-webkit-scrollbar-thumb {
-    background-color: var(--color-dorado-formal);
-    border-radius: 3px;
+  background-color: var(--color-dorado-formal);
+  border-radius: 3px;
 }
 
 .sidebar-nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 .sidebar-nav li {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 .sidebar-nav a {
-    display: block;
-    padding: 12px 20px;
-    color: #FDFBF7;
-    text-decoration: none;
-    font-size: 0.98rem;
-    transition: all 0.3s ease;
-    border-left: 5px solid transparent;
-    border-bottom: 1px dotted rgba(232, 211, 156, 0.15);
+  display: block;
+  padding: 12px 20px;
+  color: #fdfbf7;
+  text-decoration: none;
+  font-size: 0.98rem;
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+  border-bottom: 1px dotted rgba(232, 211, 156, 0.15);
 }
 
-.sidebar-nav a:hover, .sidebar-nav a.active {
-    background-color: rgba(197, 160, 89, 0.2);
-    color: #E8D39C;
-    border-left-color: var(--color-dorado-formal);
-    padding-left: 25px;
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  background-color: rgba(197, 160, 89, 0.2);
+  color: #e8d39c;
+  border-left-color: var(--color-dorado-formal);
+  padding-left: 25px;
 }
 
 .has-submenu .submenu {
-    max-height: 0;
-    overflow: hidden;
-    background-color: var(--color-cafe-sub);
-    transition: max-height 0.4s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--color-cafe-sub);
+  transition: max-height 0.4s ease-out;
 }
 
 .has-submenu:hover .submenu {
-    max-height: 450px;
-    transition: max-height 0.5s ease-in;
+  max-height: 450px;
+  transition: max-height 0.5s ease-in;
 }
 
 .submenu li a {
-    padding: 8px 20px 8px 35px; 
-    font-size: 0.88rem;
-    color: #E2CE9C;
-    border-bottom: none;
+  padding: 8px 20px 8px 35px;
+  font-size: 0.88rem;
+  color: #e2ce9c;
+  border-bottom: none;
 }
 
 .submenu li a:hover {
-    background-color: rgba(197, 160, 89, 0.3);
-    color: #FFF;
-    padding-left: 40px;
-    border-left-color: var(--color-dorado-suave);
+  background-color: rgba(197, 160, 89, 0.3);
+  color: #fff;
+  padding-left: 40px;
+  border-left-color: var(--color-dorado-suave);
 }
 
 .main-content {
-    margin-left: 290px;
-    flex-grow: 1;
-    padding: 45px;
-    background-color: var(--color-fondo-amarillo);
+  margin-left: 290px;
+  flex-grow: 1;
+  padding: 45px;
+  background-color: var(--color-fondo-amarillo);
 }
 
 .content-header {
-    background-color: var(--color-panel-claro);
-    padding: 25px 35px;
-    border-radius: 4px;
-    border: 1px solid var(--color-dorado-formal);
-    box-shadow: 0 3px 8px rgba(54, 34, 20, 0.05);
-    margin-bottom: 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--color-panel-claro);
+  padding: 25px 35px;
+  border-radius: 4px;
+  border: 1px solid var(--color-dorado-formal);
+  box-shadow: 0 3px 8px rgba(54, 34, 20, 0.05);
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-titles h1 {
-    color: var(--color-cafe-oscuro);
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
+  color: var(--color-cafe-oscuro);
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
 }
 
 .header-brand span {
-    color: var(--color-cafe-oscuro);
-    font-size: 1.1rem;
-    font-weight: bold;
-    font-style: italic;
-    background-color: var(--color-dorado-suave);
-    padding: 6px 16px;
-    border-radius: 20px;
-    border: 1px solid var(--color-dorado-formal);
+  color: var(--color-cafe-oscuro);
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+  background-color: var(--color-dorado-suave);
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--color-dorado-formal);
 }
 
 .content-section {
-    background-color: var(--color-panel-claro);
-    padding: 35px;
-    border-radius: 4px;
-    margin-bottom: 25px;
-    box-shadow: 0 2px 6px rgba(54, 34, 20, 0.04);
-    border: 1px solid var(--borde-formal);
+  background-color: var(--color-panel-claro);
+  padding: 35px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(54, 34, 20, 0.04);
+  border: 1px solid var(--borde-formal);
 }
 
 .content-section h2 {
-    color: var(--color-cafe-oscuro);
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+  color: var(--color-cafe-oscuro);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 
 .vintage-divider {
-    height: 1px;
-    background-color: var(--color-dorado-formal);
-    margin: 15px 0 20px 0;
+  height: 1px;
+  background-color: var(--color-dorado-formal);
+  margin: 15px 0 20px 0;
 }
 
 .content-section p {
-    line-height: 1.8;
-    color: #3E2B1D;
-    font-size: 1.1rem;
-    text-align: justify;
+  line-height: 1.8;
+  color: #3e2b1d;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 .quote-text {
-    text-align: center;
-    font-style: italic;
-    color: #59412B;
-    margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  color: #59412b;
+  margin-top: 10px;
 }
 
 .content-footer-section {
-    background-color: var(--color-panel-claro);
-    padding: 20px;
-    border-radius: 4px;
-    text-align: center;
-    border: 1px solid var(--borde-formal);
-    font-style: italic;
-    color: #59412B;
-    margin-top: 25px;
+  background-color: var(--color-panel-claro);
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid var(--borde-formal);
+  font-style: italic;
+  color: #59412b;
+  margin-top: 25px;
 }
 .sidebar-footer {
-    padding: 12px 15px;
-    background-color: var(--color-cafe-muy-oscuro);
-    border-top: 1px solid var(--color-dorado-formal);
-    text-align: center;
-    flex-shrink: 0;
+  padding: 12px 15px;
+  background-color: var(--color-cafe-muy-oscuro);
+  border-top: 1px solid var(--color-dorado-formal);
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .sidebar-img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    border-radius: 4px;
-    border: 1px solid var(--color-dorado-formal);
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--color-dorado-formal);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
 }
 
 .sidebar-img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .content-header {
-    background-color: var(--color-panel-claro);
-    padding: 30px 35px;
-    border-radius: 4px;
-    border: 1px solid var(--color-dorado-formal);
-    box-shadow: 0 3px 8px rgba(54, 34, 20, 0.05);
-    margin-bottom: 35px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--color-panel-claro);
+  padding: 30px 35px;
+  border-radius: 4px;
+  border: 1px solid var(--color-dorado-formal);
+  box-shadow: 0 3px 8px rgba(54, 34, 20, 0.05);
+  margin-bottom: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-titles {
-    width: 100%;
+  width: 100%;
 }
 
 .header-titles h1 {
-    color: var(--color-cafe-oscuro);
-    font-size: 2.1rem;
-    font-family: 'Times New Roman', Times, Georgia, serif;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
+  color: var(--color-cafe-oscuro);
+  font-size: 2.1rem;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
 .header-subtitle {
-    color: #59412B;
-    font-size: 1.1rem;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, Georgia, serif;
-    letter-spacing: 0.5px;
+  color: #59412b;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  letter-spacing: 0.5px;
 }
